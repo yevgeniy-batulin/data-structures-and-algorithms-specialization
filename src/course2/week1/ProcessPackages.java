@@ -1,3 +1,5 @@
+package course2.week1;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
