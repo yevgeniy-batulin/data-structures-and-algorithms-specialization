@@ -7,6 +7,14 @@ import java.io.PrintWriter;
 import java.util.Stack;
 import java.util.StringTokenizer;
 
+/*
+    In this problem you will implement Rope —
+    data structure that can store a string and efficiently cut a part (a substring) of this string and insert it in a different position.
+
+    You are given a string 𝑆 and you have to process 𝑛 queries.
+    Each query is described by three integers 𝑖, 𝑗, 𝑘 and means to cut substring 𝑆[𝑖..𝑗] (𝑖 and 𝑗 are 0-based)
+    from the string and then insert it after the 𝑘-th symbol of the remaining string (if the symbols are numbered from 1).
+ */
 class RopeProblem {
     static class Rope {
         Vertex root;

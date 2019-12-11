@@ -6,6 +6,18 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
+/*
+    In this problem, your goal is to implement a data structure to store a set of integers and quickly compute range sums.
+
+    Implement a data structure that stores a set 𝑆 of integers with the following allowed operations:
+    ∙ add(𝑖) — add integer 𝑖 into the set 𝑆 (if it was there already, the set doesn’t change).
+    ∙ del(𝑖) — remove integer 𝑖 from the set 𝑆 (if there was no such element, nothing happens).
+    ∙ find(𝑖) — check whether 𝑖 is in the set 𝑆 or not.
+    ∙ sum(𝑙,𝑟)—output the sum of all elements 𝑣 in 𝑆 such that 𝑙≤𝑣≤𝑟.
+
+    However, to make sure that your solution can work in an online fashion,
+    each request will actually depend on the result of the last sum request.
+ */
 public class SetRangeSum {
     private static final int MODULO = 1000000001;
 
