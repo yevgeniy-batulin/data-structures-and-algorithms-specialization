@@ -1,4 +1,4 @@
-package graphs;
+package graphs.week1;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
