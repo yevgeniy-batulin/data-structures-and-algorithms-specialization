@@ -4,15 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/*
+    Check whether a given directed graph with 𝑛 vertices and 𝑚 edges contains a cycle.
+ */
 public class Acyclicity {
-    private static boolean foundCycle(List<List<Integer>> adj, int current, boolean[] visited, boolean[] visitedDuringRecursion) {
+    private static boolean foundCycle(List<List<Integer>> adjacent, int current, boolean[] visited, boolean[] visitedDuringRecursion) {
         if (visitedDuringRecursion[current]) return true;
 
         visited[current] = true;
         visitedDuringRecursion[current] = true;
 
-        for (Integer neighbour : adj.get(current)) {
-            if (foundCycle(adj, neighbour, visited, visitedDuringRecursion)) return true;
+        for (Integer neighbour : adjacent.get(current)) {
+            if (foundCycle(adjacent, neighbour, visited, visitedDuringRecursion)) return true;
         }
 
         visitedDuringRecursion[current] = false;
