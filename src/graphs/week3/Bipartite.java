@@ -59,4 +59,3 @@ public class Bipartite {
         System.out.println(bipartite(adjacent));
     }
 }
-
